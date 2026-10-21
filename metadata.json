@@ -1,0 +1,6 @@
+{
+  "name": "TaverenOak - Luxury Heritage Hotel",
+  "description": "Experience timeless grandeur, colonial architecture, royal suites, award-winning culinary sanctuaries, and holistic spa at TaverenOak.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #122820; /* Deep Heritage Royal Forest Green */
+    --color-primary-dark: #0A1712;
+    --color-gold: #C5A059; /* Warm Muted Royal Gold */
+    --color-gold-hover: #AA8640;
+    --color-gold-light: #F4EDE0;
+    --color-sand: #FAF8F5; /* Warm Linen Canvas */
+    --color-cream: #F3EFEA;
+    --color-charcoal: #202020;
+    --color-muted: #6E6B65;
+    --color-border: #E5DFD5;
+  }
+
+  body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--color-sand);
+    color: var(--color-charcoal);
+  }
+
+  h1, h2, h3, h4, .font-serif-luxury {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Custom Gold Accent Lines & Ornaments */
+.gold-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.gold-divider::before,
+.gold-divider::after {
+  content: '';
+  height: 1px;
+  width: 48px;
+  background: linear-gradient(90deg, transparent, #C5A059);
+}
+.gold-divider::after {
+  background: linear-gradient(90deg, #C5A059, transparent);
+}
+
+/* Smooth motion respecting reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom scrollbar for luxury feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9CEBE;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B38F4D;
+}
